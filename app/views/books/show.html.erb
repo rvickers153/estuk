@@ -4,7 +4,7 @@
 <div class="row">
  
 <div class="col-md-6">
-<%= image_tag "http://ecx.images-amazon.com/images/I/51Wr2aKuJeL._SX335_BO1,204,203,200_.jpg", class: "img-responsive" %>
+<%= image_tag "book.jpg", class: "img-responsive" %>
 </div>
 
 <div class="col-md-6">
@@ -13,8 +13,10 @@
 <h4 class="text-right">$<%= @book.price.to_f / 100 %></h4>
 </div>
  
+ <div>
+<%= link_to 'Edit', edit_book_path(@book), class: "btn" %> |
+<%= link_to 'Back', books_path, class: "btn" %>
+</div>
 </div>
 </div>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
