@@ -30,6 +30,7 @@ gem "cancan"
 gem "paperclip", "~> 4.3"
 gem 'dotenv-rails', '~> 2.0.2', group: :development
 gem 'aws-sdk', '< 2.0'
+gem 'friendly_id'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
