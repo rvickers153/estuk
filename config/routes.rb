@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'pages#home'
   get 'dashboard' => 'pages#dashboard'
+  post '/buy/:slug', to: 'transactions#create', as: :buy
+  get '/pickup/:guid', to: 'transactions#pickup', as: :pickup
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
